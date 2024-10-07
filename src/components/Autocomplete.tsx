@@ -24,7 +24,6 @@ export default function Autocomplete({ fetchSuggestions }: Props) {
     useEffect(() => {
         const fetchData = async () => {
             if (recentlySelected) {
-                setRecentlySelected(false);
                 return;
             }
             
@@ -37,6 +36,7 @@ export default function Autocomplete({ fetchSuggestions }: Props) {
                     setSuggestions(data);
                 } else {
                     setError(error as string);
+                    setSuggestions([]);
                 }
             } else {
                 setSuggestions([]);
