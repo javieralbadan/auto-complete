@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 interface Props {
-    value: string;
-    delay?: number;
+  value: string;
+  delay?: number;
 }
 
 export const useDebounce = ({ value, delay = 300 }: Props) => {

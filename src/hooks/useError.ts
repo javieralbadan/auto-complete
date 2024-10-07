@@ -1,27 +1,27 @@
 import { useCallback, useState } from "react";
 
 interface ErrorState {
-    hasError: boolean;
-    message: string | null;
-}  
+  hasError: boolean;
+  message: string | null;
+}
 
 export function useError() {
-    const [errorState, setErrorState] = useState<ErrorState>({
-        hasError: false,
-        message: null,
-    });
+  const [errorState, setErrorState] = useState<ErrorState>({
+    hasError: false,
+    message: null,
+  });
 
-    const setError = useCallback((message: string) => {
-        setErrorState({ hasError: true, message });
-    }, []);
+  const setError = useCallback((message: string) => {
+    setErrorState({ hasError: true, message });
+  }, []);
 
-    const clearError = useCallback(() => {
-        setErrorState({ hasError: false, message: null });
-    }, []);
+  const clearError = useCallback(() => {
+    setErrorState({ hasError: false, message: null });
+  }, []);
 
-    return {
-        error: errorState,
-        setError,
-        clearError,
-    }
+  return {
+    error: errorState,
+    setError,
+    clearError,
+  };
 }

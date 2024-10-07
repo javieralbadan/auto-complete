@@ -1,10 +1,10 @@
 import { SuggestionItem } from "./SuggestionItem";
 
 export interface SearchProps {
-	query?: string;
+  query?: string;
 }
 
 export interface FetchSuggestionsResult {
-	data: SuggestionItem[] | null;
-	error: string | null;
-};
+  data: SuggestionItem[] | null;
+  error: string | null;
+}

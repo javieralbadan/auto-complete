@@ -1,6 +1,6 @@
-import Autocomplete from './components/Autocomplete';
-import { fetchSuggestions } from './services/api';
-import './App.css';
+import Autocomplete from "./components/Autocomplete";
+import { fetchSuggestions } from "./services/api";
+import "./App.css";
 
 function App() {
   return (
