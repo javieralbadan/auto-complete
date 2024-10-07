@@ -1,10 +1,10 @@
-# Deel assignment
+# Autocomplete example
 
 This is a regular React app with the most common commands to run it, that means after dependecies installation run 'npm start'.
 
 For this first iteration, the autocomplete has an unique data source, not customizable, implements a loading spinner, an error handling and a debonuce for the UX. From the architecture were built custom hooks, the services layer and a custom components for the main logic, and another one to separate the suggestions. Styles are handling only in one stylesheet.
 
-As next steps: separate the input field to a children component. It will be important to implement unit testing and e2e. Create a sandbox with Storybook.
+As next steps: separate the input field to a children component. It will be important to implement unit testing and e2e. Create a sandbox with Storybook. Add Husky for pre commits hooks. Change Vite instead of Create React App.
 
 # Getting Started with Create React App
 
