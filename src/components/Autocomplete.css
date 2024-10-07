@@ -1,0 +1,72 @@
+.autocomplete {
+	position: relative;
+	width: 400px;
+}
+
+.autocomplete .field {
+	position: relative;
+}
+
+.autocomplete input {
+    position: relative;
+    box-sizing: border-box;
+	width: 100%;
+	padding: 0.5rem;
+	font-size: 1.2rem;
+	border: none;
+	border: 1px solid #ddd;
+	border-radius: 0.2rem;
+	z-index: 1;
+}
+
+.autocomplete .field .spinner {
+	position: absolute;
+	right: 0.3rem;
+	top: 0.5rem;
+	z-index: 1;
+    width: 1rem;
+    height: 1rem;
+	border: 0.3rem solid #ddd;
+    border-top: 0.3rem solid cyan;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.suggestions-list {
+	position: absolute;
+	top: calc(100% - 0.1rem);
+	left: 0;
+	right: 0;
+	padding: 0;
+	margin: 0;
+	border-top: none;
+	list-style-type: none;
+	max-height: 200px;
+	overflow-y: auto;
+	background-color: white;
+	z-index: 0;
+}
+
+.suggestions-list li {
+	padding: 0.8rem;
+	cursor: pointer;
+    color: #333;
+}
+
+.suggestions-list li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.suggestions-list li:hover {
+    background-color: #f0f0f0;
+}
+
+mark {
+	color: crimson;
+	background-color: transparent;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
